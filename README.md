@@ -23,8 +23,11 @@ This repo contains files for Drone 500 Project.
 - positional arguments:
 
     if         Input file path.
+
     of         Output file path.
+
     h           Height.
+
     w           Width.
 
 - optional arguments:
