@@ -1,6 +1,6 @@
 # Drone 500
 
-This repo contains files for Drone 500 Project.
+This repository contains files for Drone 500 Project.
 
 ## Files
 
@@ -34,12 +34,25 @@ This repo contains files for Drone 500 Project.
 
     -h, --help  show this help message and exit
 
-  ​
-
-
-
 ## Libraries
 - numpy
 - argparse
 - PIL
 
+
+## Environment
+
+```
+hisenzhang@hisenzhang-PC
+OS: Deepin 15.4.1 unstable
+Kernel: x86_64 Linux 4.9.0-deepin10-amd64
+Shell: bash 4.4.11
+Resolution: 1920x1080
+CPU: Intel Core i5-7200U CPU @ 2.5GHz
+GPU: Mesa DRI Intel(R) HD Graphics 620 (Kabylake GT2) 
+RAM: 5124MiB / 7856MiB
+Python: Python 2.7.13
+MATLAB: R2016b on Linux
+```
+
+## 
