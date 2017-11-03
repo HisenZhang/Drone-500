@@ -5,20 +5,29 @@ import numpy as np
 # argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument('_if', type=str, help='Input file path.')
-parser.add_argument('_of', type=str, help='Output file path.')
+parser.add_argument('input', type=str, help='Input file path.')
+parser.add_argument('--output', type=str, help='Output file path.')
 parser.add_argument('h', type=int, help='Height.')
 parser.add_argument('w', type=int, help='Width.')
 args = parser.parse_args()
 
 # img process
 
-im=Image.open(args._if)
+im=Image.open(args.input)
 im = im.resize((args.h,args.w), Image.ANTIALIAS)	
 # obj.resize((height,width),algorithm)
 modified=im.convert('1')
 modified.show()
-modified.save(args._of ,format='png')
+
+if args.output:
+	modified.save(args.output ,format='png')
+else:
+	try:
+		modified.save(str(hash(args.input))[:4]+'.png',format='png')
+		pass
+	except IOError:
+		raise IOError
+
 count_white,count_black = 0,0
 # Initialize counter
 for i in np.nditer(np.array(modified)):

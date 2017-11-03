@@ -18,21 +18,18 @@ This repository contains files for Drone 500 Project.
 
 ### resize
 
-- usage: resize.py [-h] if of h w
+```
+usage: resize.py [-h] [--output OUTPUT] input h w
 
-- positional arguments:
+positional arguments:
+  input            Input file path.
+  h                Height.
+  w                Width.
 
-    if         Input file path.
-
-    of         Output file path.
-
-    h           Height.
-
-    w           Width.
-
-- optional arguments:
-
-    -h, --help  show this help message and exit
+optional arguments:
+  -h, --help       show this help message and exit
+  --output OUTPUT  Output file path.
+```
 
 ## Libraries
 - numpy
