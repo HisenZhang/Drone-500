@@ -7,9 +7,11 @@ This repository contains files for Drone 500 Project.
 
 ```
 .
+├── doc		// documentation
 ├── img		// images used
 │   ├── matrix	// processed images
 │   └── raw	// raw images
+│   └── separated	// the curves
 ├── map		// maps in .pdf
 └── tools	// contains several ulitilies
 ```
@@ -31,7 +33,13 @@ optional arguments:
   --output OUTPUT  Output file path.
 ```
 
+This program basically functions in following pattern:
+
+1. Resize the picture into the geometry given;
+2. Convert to 0-1 matrix and save.
+
 ## Libraries
+
 - numpy
 - argparse
 - PIL
@@ -51,5 +59,3 @@ RAM: 5124MiB / 7856MiB
 Python: Python 2.7.13
 MATLAB: R2016b on Linux
 ```
-
-## 
