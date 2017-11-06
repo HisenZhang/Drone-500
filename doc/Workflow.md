@@ -6,24 +6,24 @@
 ```
 +-----------------------------+    +----------------------+
 |                             |    |                      |
-|                             |    |                      |
+|                             |    |       Animation      |
 |                             |    |                      |
 |     Select a image          |    |                      |
-|                             |    |     Curve fitting    |
-|                             |    |                      |
-|                             |    |                      |
-|     Resize the picture      |    |                      |
-|                             |    |               MATLAB |
 |                             |    +----------^-----------+
 |                             |               |
-|     Convert to matrix       |               |
-|                             |               |
+|                             |    +----------+-----------+
+|     Resize the picture      |    |                      |
+|                             |    |     Curve fitting    |
+|                             |    |                      |
+|                             |    |               MATLAB |
+|     Convert to 0-1 matrix   |    +----------^-----------+
 |                             |               |
 |                             |    +----------+-----------+
-|     Preview and save        |    |                      |
-|                             |    |    Cut into curves   |
+|                             |    |                      |
+|     Preview and save        |    |   Cut into labeled   |
+|                             |    |       curves         |
 |                             +---->                      |
-|                      resize |    |            Photoshop |
+|                   resize.py |    |            Photoshop |
 +-----------------------------+    +----------------------+
 ```
 
