@@ -13,6 +13,7 @@ This repository contains files for Drone 500 Project.
 │   └── raw	// raw images
 │   └── separated	// the curves
 ├── map		// maps in .pdf
+├── mat		// matrix in .mat and .xlsx
 └── tools	// contains several ulitilies
 ```
 
