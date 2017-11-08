@@ -39,6 +39,8 @@ This program basically functions in following pattern:
 1. Resize the picture into the geometry given;
 2. Convert to 0-1 matrix and save.
 
+For more information please view [documentation](./doc/workflow.md).
+
 ## Libraries
 
 - numpy
@@ -60,3 +62,4 @@ RAM: 5124MiB / 7856MiB
 Python: Python 2.7.13
 MATLAB: R2016b on Linux
 ```
+
