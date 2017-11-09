@@ -13,10 +13,12 @@ args = parser.parse_args()
 
 # img process
 
-im=Image.open(args.input)
+im = Image.open(args.input)
 im = im.resize((args.h,args.w), Image.ANTIALIAS)	
 # obj.resize((height,width),algorithm)
-modified=im.convert('1')
+modified = im.convert('1')
+array = np.array(modified)
+# save as an array. For later use.
 modified.show()
 
 if args.output:
@@ -36,3 +38,23 @@ for i in np.nditer(np.array(modified)):
 	else:
 		count_black += 1
 print("False %d,True %d, Total %d." % (count_white,count_black,count_black+count_white))
+# statistic module
+
+x,y=[],[]
+# x stores x-coordinate, y for y-values
+
+array = array.tolist()
+for i in range(len(array)):
+	for j in range(len(array[i])):
+		array[i][j] = not array[i][j]
+array = np.array(array)
+# turn into list, take the not() value, then back to ndarray
+
+y,x = np.nonzero(array)
+for i in range(len(y)):
+	y[i] = abs(args.w-y[i])
+# convert into conventional coordinate
+
+print('x = '+str(x))
+print('y = '+str(y))
+# output

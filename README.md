@@ -17,7 +17,7 @@ This repository contains files for Drone 500 Project.
 └── tools	// contains several ulitilies
 ```
 
-## Utilities
+## Utility
 
 ### resize
 
@@ -40,6 +40,17 @@ This program basically functions in following pattern:
 2. Convert to 0-1 matrix and save.
 
 For more information please view [documentation](./doc/workflow.md).
+
+#### Sample Output
+
+```
+False 48,True 7062, Total 7110.
+
+x = [34 36 38 39 41 43 44 45 47 48 49 50 52 26 28 29 30 31 32 34 37 52 54 55 56 58 21 22 23 24 26 58 60 18 19 20 62 15 16 17 12 13 14 10 11  8  9  7]
+
+y = [9 9 9 9 9 9 9 9 9 9 9 9 9 8 8 8 8 8 8 8 8 8 8 8 8 8 7 7 7 7 7 7 7 6 6 6 6 5 5 5 4 4 4 3 3 2 2 1]
+
+```
 
 ## Libraries
 
