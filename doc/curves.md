@@ -1,4 +1,4 @@
-# Curve 2
+## Curve 2
 
 Linear model Poly5:
 
@@ -18,5 +18,653 @@ Goodness of fit:
   R-square: 0.9802
   Adjusted R-square: 0.9779
   RMSE: 0.3261
+```
+
+## Curve 3
+
+Linear model Poly5:
+
+     f(x) = p1*x^5 + p2*x^4 + p3*x^3 + p4*x^2 + p5*x + p6
+Coefficients (with 95% confidence bounds):
+       p1 =   1.367e-07  (-7.341e-08, 3.467e-07)
+       p2 =  -2.441e-05  (-6.286e-05, 1.404e-05)
+       p3 =     0.00164  (-0.00103, 0.00431)
+       p4 =    -0.05769  (-0.1448, 0.02945)
+       p5 =       1.041  (-0.2808, 2.363)
+       p6 =       8.585  (1.212, 15.96)
+
+Goodness of fit:
+
+```
+  SSE: 4.274
+  R-square: 0.9883
+  Adjusted R-square: 0.9869
+  RMSE: 0.3229
+```
+
+## Curve 5
+
+Linear model Poly6:
+
+     f(x) = p1*x^6 + p2*x^5 + p3*x^4 + p4*x^3 + p5*x^2 + 
+                    p6*x + p7
+Coefficients (with 95% confidence bounds):
+       p1 =  -1.964e-09  (-1.239e-08, 8.458e-09)
+       p2 =   2.511e-07  (-1.572e-06, 2.074e-06)
+       p3 =  -1.144e-05  (-0.0001338, 0.000111)
+       p4 =   0.0002106  (-0.003734, 0.004155)
+       p5 =   -0.005635  (-0.06772, 0.05645)
+       p6 =      0.1682  (-0.2578, 0.5941)
+       p7 =       17.75  (16.85, 18.66)
+
+Goodness of fit:
+
+```
+  SSE: 6.313
+  R-square: 0.976
+  Adjusted R-square: 0.9727
+  RMSE: 0.3788
+```
+
+## Curve 6
+
+N/A
+
+## Curve 7
+
+Linear model Poly6:
+
+     f(x) = p1*x^6 + p2*x^5 + p3*x^4 + p4*x^3 + p5*x^2 + 
+                    p6*x + p7
+Coefficients (with 95% confidence bounds):
+       p1 =  -1.006e-08  (-2.073e-08, 6.198e-10)
+       p2 =    3.37e-06  (-5.936e-07, 7.333e-06)
+       p3 =   -0.000457  (-0.001059, 0.0001453)
+       p4 =     0.03131  (-0.0166, 0.07921)
+       p5 =      -1.095  (-3.197, 1.007)
+       p6 =       16.99  (-31.21, 65.18)
+       p7 =      -31.97  (-482.9, 418.9)
+
+Goodness of fit:
+
+```
+  SSE: 7.91
+  R-square: 0.9922
+  Adjusted R-square: 0.9914
+  RMSE: 0.39
+```
+
+## Curve 11
+
+Linear model Poly1:
+
+     f(x) = p1*x + p2
+Coefficients (with 95% confidence bounds):
+       p1 =  -5.274e-15  (-2.507e-14, 1.453e-14)
+       p2 =          46  (46, 46)
+
+Goodness of fit:
+
+```
+  SSE: 1.161e-27
+  R-square: NaN
+  Adjusted R-square: NaN
+  RMSE: 1.967e-14
+```
+
+## Curve 12
+
+Linear model Poly1:
+
+     f(x) = p1*x + p2
+Coefficients (with 95% confidence bounds):
+       p1 =      -1.667  (-9.256, 5.922)
+       p2 =          97  (-125, 319)
+
+Goodness of fit:
+
+```
+  SSE: 4.667
+  R-square: 0.3086
+  Adjusted R-square: -0.03704
+  RMSE: 1.528
+```
+
+## Curve 13
+
+Linear model Poly2:
+
+     f(x) = p1*x^2 + p2*x + p3
+Coefficients (with 95% confidence bounds):
+       p1 =    -0.07576  (-0.4052, 0.2536)
+       p2 =       5.045  (-12, 22.1)
+       p3 =      -31.92  (-251.9, 188.1)
+
+Goodness of fit:
+
+```
+  SSE: 0.5303
+  R-square: 0.9697
+  Adjusted R-square: 0.9495
+  RMSE: 0.4204
+```
+
+## Curve 14
+
+Linear model Poly2:
+
+     f(x) = p1*x^2 + p2*x + p3
+Coefficients (with 95% confidence bounds):
+       p1 =    -0.07143  (-0.4602, 0.3173)
+       p2 =       3.557  (-17.44, 24.55)
+       p3 =       11.77  (-271.1, 294.7)
+
+Goodness of fit:
+
+```
+  SSE: 0.2286
+  R-square: 0.8095
+  Adjusted R-square: 0.619
+  RMSE: 0.3381
+```
+
+## Curve 15
+
+Linear model Poly1:
+
+     f(x) = p1*x + p2
+Coefficients (with 95% confidence bounds):
+       p1 =           1  (-3.968, 5.968)
+       p2 =          27  (-123.3, 177.3)
+
+Goodness of fit:
+
+```
+  SSE: 2
+  R-square: 0.2727
+  Adjusted R-square: -0.09091
+  RMSE: 1
+```
+
+## Curve 16
+
+Linear model Poly3:
+
+     f(x) = p1*x^3 + p2*x^2 + p3*x + p4
+Coefficients (with 95% confidence bounds):
+       p1 =    0.002525  (-0.02539, 0.03044)
+       p2 =     -0.2976  (-2.602, 2.006)
+       p3 =       11.03  (-52.12, 74.18)
+       p4 =      -72.26  (-647.2, 502.6)
+
+Goodness of fit:
+
+```
+  SSE: 0.2403
+  R-square: 0.9729
+  Adjusted R-square: 0.9526
+  RMSE: 0.2451
+```
+
+## Curve 17
+
+Linear model Poly2:
+
+     f(x) = p1*x^2 + p2*x + p3
+Coefficients (with 95% confidence bounds):
+       p1 =    -0.07143  (-0.4602, 0.3173)
+       p2 =       5.986  (-22.79, 34.76)
+       p3 =      -58.94  (-590.6, 472.7)
+
+Goodness of fit:
+
+```
+  SSE: 0.2286
+  R-square: 0.956
+  Adjusted R-square: 0.9121
+  RMSE: 0.3381
+```
+
+## Curve 18
+
+Linear model Poly2:
+
+     f(x) = p1*x^2 + p2*x + p3
+Coefficients (with 95% confidence bounds):
+       p1 =     -0.2879  (-0.6256, 0.04988)
+       p2 =       17.82  (-3.883, 39.53)
+       p3 =      -209.6  (-557.6, 138.4)
+
+Goodness of fit:
+
+```
+  SSE: 0.5576
+  R-square: 0.9303
+  Adjusted R-square: 0.8838
+  RMSE: 0.4311
+```
+
+## Curve 19
+
+Linear model Poly2:
+
+     f(x) = p1*x^2 + p2*x + p3
+Coefficients (with 95% confidence bounds):
+       p1 =    -0.04623  (-0.09835, 0.005887)
+       p2 =        3.11  (-0.4889, 6.71)
+       p3 =       15.24  (-46.52, 77)
+
+Goodness of fit:
+
+```
+  SSE: 1.328
+  R-square: 0.5402
+  Adjusted R-square: 0.387
+  RMSE: 0.4705
+```
+
+## Curve 20
+
+Linear model Poly1:
+
+     f(x) = p1*x + p2
+Coefficients (with 95% confidence bounds):
+       p1 =     -0.1786  (-0.3376, -0.01956)
+       p2 =       75.29  (67.65, 82.92)
+
+Goodness of fit:
+
+```
+  SSE: 0.5357
+  R-square: 0.625
+  Adjusted R-square: 0.55
+  RMSE: 0.3273
+```
+
+## Curve 21
+
+Linear model Poly2:
+
+     f(x) = p1*x^2 + p2*x + p3
+Coefficients (with 95% confidence bounds):
+       p1 =     -0.4667  (-1.251, 0.3177)
+       p2 =       38.47  (-28.32, 105.3)
+       p3 =      -720.6  (-2142, 700.4)
+
+Goodness of fit:
+
+```
+  SSE: 1.067
+  R-square: 0.92
+  Adjusted R-square: 0.8667
+  RMSE: 0.5963
+```
+
+## Curve 22
+
+Linear model Poly2:
+
+     f(x) = p1*x^2 + p2*x + p3
+Coefficients (with 95% confidence bounds):
+       p1 =     -0.0303  (-0.06292, 0.002309)
+       p2 =       2.206  (-0.828, 5.24)
+       p3 =       33.49  (-36.86, 103.8)
+
+Goodness of fit:
+
+```
+  SSE: 0.703
+  R-square: 0.9781
+  Adjusted R-square: 0.9718
+  RMSE: 0.3169
+```
+
+## Curve 24
+
+Linear model Poly9:
+
+     f(x) = p1*x^9 + p2*x^8 + p3*x^7 + p4*x^6 + 
+                    p5*x^5 + p6*x^4 + p7*x^3 + p8*x^2 + p9*x + p10
+Coefficients (with 95% confidence bounds):
+       p1 =  -6.018e-09  (-1.455e-08, 2.511e-09)
+       p2 =   3.352e-06  (-1.586e-06, 8.289e-06)
+       p3 =  -0.0008257  (-0.002093, 0.0004414)
+       p4 =      0.1181  (-0.0711, 0.3073)
+       p5 =       -10.8  (-28.92, 7.309)
+       p6 =       655.6  (-497.5, 1809)
+       p7 =  -2.638e+04  (-7.519e+04, 2.242e+04)
+       p8 =    6.79e+05  (-6.457e+05, 2.004e+06)
+       p9 =  -1.014e+07  (-3.105e+07, 1.078e+07)
+       p10 =   6.689e+07  (-7.951e+07, 2.133e+08)
+
+Goodness of fit:
+
+```
+  SSE: 50.92
+  R-square: 0.9927
+  Adjusted R-square: 0.991
+  RMSE: 1.143
+```
+
+## Curve 26
+
+Linear model Poly9:
+
+     f(x) = p1*x^9 + p2*x^8 + p3*x^7 + p4*x^6 + 
+                    p5*x^5 + p6*x^4 + p7*x^3 + p8*x^2 + p9*x + p10
+Coefficients (with 95% confidence bounds):
+       p1 =   1.877e-12  (-2.867e-11, 3.243e-11)
+       p2 =  -8.562e-10  (-1.917e-08, 1.746e-08)
+       p3 =   1.556e-07  (-4.693e-06, 5.004e-06)
+       p4 =    -1.3e-05  (-0.0007565, 0.0007305)
+       p5 =   0.0002147  (-0.07258, 0.07301)
+       p6 =     0.05426  (-4.664, 4.773)
+       p7 =      -5.226  (-207.7, 197.2)
+       p8 =       221.4  (-5321, 5764)
+       p9 =       -4730  (-9.262e+04, 8.317e+04)
+       p10 =   4.143e+04  (-5.735e+05, 6.564e+05)
+
+Goodness of fit:
+
+```
+  SSE: 7.593
+  R-square: 0.9967
+  Adjusted R-square: 0.996
+  RMSE: 0.4357
+```
+
+## Curve 27
+
+Linear model Poly2:
+
+     f(x) = p1*x^2 + p2*x + p3
+Coefficients (with 95% confidence bounds):
+       p1 =     0.01426  (-0.004028, 0.03255)
+       p2 =      0.3544  (-0.0646, 0.7735)
+       p3 =     -0.8216  (-3.035, 1.392)
+
+Goodness of fit:
+
+```
+  SSE: 1.598
+  R-square: 0.9825
+  Adjusted R-square: 0.979
+  RMSE: 0.3997
+```
+
+## Curve 28
+
+Linear model Poly3:
+
+     f(x) = p1*x^3 + p2*x^2 + p3*x + p4
+Coefficients (with 95% confidence bounds):
+       p1 =    -0.01405  (-0.07007, 0.04198)
+       p2 =      0.4741  (-1.823, 2.771)
+       p3 =        -5.3  (-36.17, 25.57)
+       p4 =       33.63  (-102.1, 169.4)
+
+Goodness of fit:
+
+```
+  SSE: 0.8065
+  R-square: 0.9091
+  Adjusted R-square: 0.841
+  RMSE: 0.449
+```
+
+## Curve 29
+
+Linear model Poly2:
+
+     f(x) = p1*x^2 + p2*x + p3
+Coefficients (with 95% confidence bounds):
+       p1 =     0.01463  (0.006554, 0.0227)
+       p2 =      0.1091  (-0.04732, 0.2655)
+       p3 =       18.45  (17.82, 19.09)
+
+Goodness of fit:
+
+```
+  SSE: 1.744
+  R-square: 0.9757
+  Adjusted R-square: 0.972
+  RMSE: 0.3662
+```
+
+## Curve 30
+
+Linear model Poly2:
+
+     f(x) = p1*x^2 + p2*x + p3
+Coefficients (with 95% confidence bounds):
+       p1 =     -0.1515  (-0.5614, 0.2584)
+       p2 =       4.036  (-9.191, 17.26)
+       p3 =       2.997  (-102.9, 108.9)
+
+Goodness of fit:
+
+```
+  SSE: 0.8212
+  R-square: 0.9242
+  Adjusted R-square: 0.8737
+  RMSE: 0.5232
+```
+
+## Curve 31
+
+Linear model Poly4:
+
+     f(x) = p1*x^4 + p2*x^3 + p3*x^2 + p4*x + p5
+Coefficients (with 95% confidence bounds):
+       p1 =   0.0001179  (4.417e-05, 0.0001917)
+       p2 =    -0.02719  (-0.04245, -0.01194)
+       p3 =       2.337  (1.164, 3.51)
+       p4 =       -88.6  (-128.3, -48.9)
+       p5 =        1287  (787.7, 1786)
+
+Goodness of fit:
+
+```
+  SSE: 6.023
+  R-square: 0.9709
+  Adjusted R-square: 0.9661
+  RMSE: 0.501
+```
+
+## Curve 32
+
+Linear model Poly4:
+
+     f(x) = p1*x^4 + p2*x^3 + p3*x^2 + p4*x + p5
+Coefficients (with 95% confidence bounds):
+       p1 =  -0.0002993  (-0.0005294, -6.928e-05)
+       p2 =      0.0603  (0.01496, 0.1056)
+       p3 =      -4.581  (-7.908, -1.254)
+       p4 =       155.3  (47.62, 263.1)
+       p5 =       -1926  (-3225, -627.2)
+
+Goodness of fit:
+
+```
+  SSE: 7.39
+  R-square: 0.952
+  Adjusted R-square: 0.9424
+  RMSE: 0.6079
+```
+
+## Curve 33
+
+Linear model Poly4:
+
+     f(x) = p1*x^4 + p2*x^3 + p3*x^2 + p4*x + p5
+Coefficients (with 95% confidence bounds):
+       p1 =   3.459e-05  (1.341e-06, 6.785e-05)
+       p2 =   -0.008378  (-0.01478, -0.001982)
+       p3 =      0.7471  (0.294, 1.2)
+       p4 =      -28.88  (-42.88, -14.89)
+       p5 =       442.3  (283.5, 601.1)
+
+Goodness of fit:
+
+```
+  SSE: 24.44
+  R-square: 0.9618
+  Adjusted R-square: 0.9576
+  RMSE: 0.824
+```
+
+## Curve 34
+
+Linear model Poly5:
+
+     f(x) = p1*x^5 + p2*x^4 + p3*x^3 + p4*x^2 + p5*x + p6
+Coefficients (with 95% confidence bounds):
+       p1 =  -7.367e-06  (-1.591e-05, 1.177e-06)
+       p2 =    0.001448  (-0.0005249, 0.003421)
+       p3 =     -0.1086  (-0.2887, 0.07142)
+       p4 =       3.775  (-4.338, 11.89)
+       p5 =      -56.58  (-237, 123.8)
+       p6 =       286.5  (-1297, 1870)
+
+Goodness of fit:
+
+```
+  SSE: 35.73
+  R-square: 0.9666
+  Adjusted R-square: 0.9623
+  RMSE: 0.9571
+```
+
+## Curve 35
+
+Linear model Poly4:
+
+     f(x) = p1*x^4 + p2*x^3 + p3*x^2 + p4*x + p5
+Coefficients (with 95% confidence bounds):
+       p1 =   3.305e-05  (1.69e-05, 4.92e-05)
+       p2 =   -0.006795  (-0.01082, -0.002774)
+       p3 =      0.5055  (0.1349, 0.8761)
+       p4 =      -16.54  (-31.52, -1.562)
+       p5 =       228.7  (4.772, 452.6)
+
+Goodness of fit:
+
+```
+  SSE: 10.83
+  R-square: 0.9888
+  Adjusted R-square: 0.9875
+  RMSE: 0.5484
+```
+
+## Curve 36
+
+Linear model Poly9:
+
+     f(x) = p1*x^9 + p2*x^8 + p3*x^7 + p4*x^6 + 
+                    p5*x^5 + p6*x^4 + p7*x^3 + p8*x^2 + p9*x + p10
+Coefficients (with 95% confidence bounds):
+       p1 =  -4.723e-12  (-2.365e-11, 1.42e-11)
+       p2 =   2.381e-09  (-7.252e-09, 1.201e-08)
+       p3 =    -5.3e-07  (-2.687e-06, 1.628e-06)
+       p4 =    6.83e-05  (-0.0002106, 0.0003472)
+       p5 =   -0.005615  (-0.02855, 0.01732)
+       p6 =      0.3052  (-0.9382, 1.549)
+       p7 =      -10.96  (-55.4, 33.48)
+       p8 =       250.9  (-758.4, 1260)
+       p9 =       -3323  (-1.654e+04, 9896)
+       p10 =   1.946e+04  (-5.659e+04, 9.552e+04)
+
+Goodness of fit:
+
+```
+  SSE: 7.072
+  R-square: 0.9892
+  Adjusted R-square: 0.9868
+  RMSE: 0.4153
+```
+
+## Curve 37
+
+Linear model Poly2:
+
+     f(x) = p1*x^2 + p2*x + p3
+Coefficients (with 95% confidence bounds):
+       p1 =         0.5  (-3.048, 4.048)
+       p2 =         -78  (-645.8, 489.8)
+       p3 =        3081  (-1.964e+04, 2.58e+04)
+
+Goodness of fit:
+
+```
+  SSE: 5.5
+  R-square: 0.8036
+  Adjusted R-square: 0.7054
+  RMSE: 1.173
+```
+
+## Curve 38
+
+Linear model Poly9:
+
+     f(x) = p1*x^9 + p2*x^8 + p3*x^7 + p4*x^6 + 
+                    p5*x^5 + p6*x^4 + p7*x^3 + p8*x^2 + p9*x + p10
+Coefficients (with 95% confidence bounds):
+       p1 =  -2.529e-09  (-6.923e-09, 1.866e-09)
+       p2 =    1.46e-06  (-1.17e-06, 4.09e-06)
+       p3 =   -0.000373  (-0.001071, 0.0003246)
+       p4 =     0.05539  (-0.05226, 0.163)
+       p5 =      -5.268  (-15.92, 5.381)
+       p6 =       332.7  (-367.5, 1033)
+       p7 =  -1.396e+04  (-4.457e+04, 1.666e+04)
+       p8 =   3.749e+05  (-4.829e+05, 1.233e+06)
+       p9 =  -5.853e+06  (-1.984e+07, 8.13e+06)
+       p10 =   4.046e+07  (-6.055e+07, 1.415e+08)
+
+Goodness of fit:
+
+```
+  SSE: 39.95
+  R-square: 0.9901
+  Adjusted R-square: 0.9875
+  RMSE: 1.084
+```
+
+## Curve 39
+
+Linear model Poly2:
+
+     f(x) = p1*x^2 + p2*x + p3
+Coefficients (with 95% confidence bounds):
+       p1 =      0.6154  (-0.4988, 1.73)
+       p2 =      -87.31  (-244.2, 69.6)
+       p3 =        3149  (-2374, 8672)
+
+Goodness of fit:
+
+```
+  SSE: 0.6154
+  R-square: 0.8817
+  Adjusted R-square: 0.7633
+  RMSE: 0.5547
+```
+
+## Curve 40
+
+Linear model Poly3:
+
+     f(x) = p1*x^3 + p2*x^2 + p3*x + p4
+Coefficients (with 95% confidence bounds):
+       p1 =    -0.08333  (-0.5822, 0.4155)
+       p2 =        17.5  (-88.81, 123.8)
+       p3 =       -1225  (-8776, 6327)
+       p4 =   2.863e+04  (-1.501e+05, 2.074e+05)
+
+Goodness of fit:
+
+```
+  SSE: 0.5
+  R-square: 0.8571
+  Adjusted R-square: 0.6429
+  RMSE: 0.5
 ```
 
