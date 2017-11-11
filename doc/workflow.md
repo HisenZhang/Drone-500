@@ -39,6 +39,7 @@
 2. Convert the resized into 0-1 matrix. 
 3. Get indexes of '1' elements.
 4. Convert into conventional coordinate system as output.
+5. Take domain and range.
 
 The principle behind the resizing a picture is complicated. The algorithm we used here is **anti-aliasing**, which smooths the curve after its geometry is modified. For instance, if if you resize a circle into a low-resolution figure, it simply turns into dots which looks serrate. If an array of drones arrange so, it would be 'impressive' for all spectators - the figure is deformed thus hard to tell its shape. 
 

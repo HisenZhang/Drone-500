@@ -46,13 +46,16 @@ For more information please view [documentation](./doc/workflow.md).
 #### Sample Output
 
 ```
-False 48,True 7062, Total 7110.
+False 6,True 7104, Total 7110.
 // Dots statistics
-
-x = [34 36 38 39 41 43 44 45 47 48 49 50 52 26 28 29 30 31 32 34 37 52 54 55 56 58 21 22 23 24 26 58 60 18 19 20 62 15 16 17 12 13 14 10 11  8  9  7]
-y = [9 9 9 9 9 9 9 9 9 9 9 9 9 8 8 8 8 8 8 8 8 8 8 8 8 8 7 7 7 7 7 7 7 6 6 6 6 5 5 5 4 4 4 3 3 2 2 1]
+########
+x = [69, 70, 71, 72, 72, 73]
+y = [55, 55, 55, 55, 54, 53]
 // two lists contains coordinate pairs
-
+########
+Range X Min: 69,Max: 73
+Range Y Min: 53,Max: 55
+// Domain & Range
 ```
 
 ## Libraries

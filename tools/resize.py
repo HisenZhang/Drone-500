@@ -37,7 +37,7 @@ for i in np.nditer(np.array(modified)):
 		count_white += 1
 	else:
 		count_black += 1
-print("False %d,True %d, Total %d." % (count_white,count_black,count_black+count_white))
+print("False %d,True %d, Total %d.\n\n########" % (count_white,count_black,count_black+count_white))
 # statistic module
 
 x,y=[],[]
@@ -54,7 +54,15 @@ y,x = np.nonzero(array)
 for i in range(len(y)):
 	y[i] = abs(args.w-y[i])
 # convert into conventional coordinate
-
+x=x.tolist()
+y=y.tolist()
 print('x = '+str(x))
-print('y = '+str(y))
+print('y = '+str(y)+'\n\n########')
 # output
+
+
+x.sort(reverse=True)
+y.sort(reverse=True)
+
+print('Range X Min: %d,Max: %d' % (x[len(x)-1],x[0]))
+print('Range Y Min: %d,Max: %d' % (y[len(y)-1],y[0]))
