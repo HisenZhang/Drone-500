@@ -85,7 +85,26 @@ Range Min: 11,Max: 20
 
 ## Curve 6
 
-N/A
+Linear model Poly3:
+
+     f(x) = p1*x^3 + p2*x^2 + p3*x + p4
+Coefficients (with 95% confidence bounds):
+       p1 =   4.321e-06  (-6.231e-05, 7.095e-05)
+       p2 =    -0.01083  (-0.01808, -0.003588)
+       p3 =       0.332  (0.08476, 0.5793)
+       p4 =       27.49  (24.88, 30.1)
+
+Goodness of fit:
+
+```
+  SSE: 3.739
+  R-square: 0.997
+  Adjusted R-square: 0.9968
+  RMSE: 0.3179
+```
+
+Range X Min: 15,Max: 57
+Range Y Min: 12,Max: 30
 
 ## Curve 7
 
