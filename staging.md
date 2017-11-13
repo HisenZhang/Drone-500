@@ -7,6 +7,8 @@ By adjusting approximated dots, we made the number of dots in three matrices abo
 From previous stage we gained two lists which contain pairs of coordination of dots. The pairs of elements combine together to form a complete coordination. 
 
 ```
+// List is a data structure in Python. 
+// A linear list can be regarded as a set of elements.
 // Sample output lists of x & y
 x = [69, 70, 71]
 y = [55, 55, 55]
