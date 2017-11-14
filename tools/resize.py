@@ -66,3 +66,37 @@ y.sort(reverse=True)
 
 print('Range X Min: %d,Max: %d' % (x[len(x)-1],x[0]))
 print('Range Y Min: %d,Max: %d' % (y[len(y)-1],y[0]))
+
+
+array = dg
+for i in range(len(array)):
+^Ifor j in range(len(array[i])):
+^I^Iarray[i][j] = not array[i][j]
+array = np.array(array)
+# turn into list, take the not() value, then back to ndarray
+
+y,x = np.nonzero(array)
+for i in range(len(y)):
+^Iy[i] = abs(40-y[i])
+# convert into conventional coordinate
+xa=x.tolist()
+ya=y.tolist()
+print('x = '+str(x))
+print('y = '+str(y)+'\n\n########')
+# output
+array = fw
+for i in range(len(array)):
+^Ifor j in range(len(array[i])):
+^I^Iarray[i][j] = not array[i][j]
+array = np.array(array)
+# turn into list, take the not() value, then back to ndarray
+
+y,x = np.nonzero(array)
+for i in range(len(y)):
+^Iy[i] = abs(40-y[i])
+# convert into conventional coordinate
+xb=x.tolist()
+yb=y.tolist()
+print('x = '+str(x))
+print('y = '+str(y)+'\n\n########')
+# output

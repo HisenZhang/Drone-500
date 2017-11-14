@@ -34,7 +34,5 @@ Now plot the figure. The orogin is at the center of graph.
 
 
 
-
-
 By adjusting approximated dots, we made the number of dots in three matrices about the same - 910, which means every drone would participate in the show (0 inefficiency). In final matrices, dots are modified manually to approach exact 910 drones. 
 
