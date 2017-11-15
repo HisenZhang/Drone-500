@@ -28,5 +28,38 @@ A,B =zip(xa,ya),zip(xb,yb)
 M = [[((xb-xa)**2+(yb-ya)**2)**0.5 for xb, yb in B ] for xa, ya in A]
 # Calcute distance matrix M
 
-print(list(map(lambda t: (t[0], t[1].index(t[0])), [(min(row),row) for row in M ])))
+def minWithID(lst):
+	val = min(lst)
+	return (val, lst.index(val))
+
+pairs=list(map(lambda t: (t[0], t[1].index(t[0])), [(min(row),row) for row in M ]))
 # print tuples that contains minimum distance and index.
+
+print(pairs)
+c = 0
+for i,j in pairs:
+	c += 1
+	print(c,j)
+
+used = [ False ] * len(M[0])
+# mark
+mapping = [ 0 ] * len(used)
+# mapping[i] = j => Ai => Bj
+MIN=0
+for Ai, arow in enumerate(M):
+	min_val = 10000000
+	min_i = -1
+	# minmum index
+
+	for i, val in enumerate(arow):
+		if val < min_val and not used[i]:
+			min_val = val
+			min_i = i
+
+	used[min_i] = True
+	MIN+=min_val
+	mapping[Ai] = min_i
+
+
+print(mapping)
+
