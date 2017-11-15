@@ -6,9 +6,10 @@ import numpy as np
 
 parser = argparse.ArgumentParser()
 parser.add_argument('input', type=str, help='Input file path.')
-parser.add_argument('--output', type=str, help='Output file path.')
 parser.add_argument('h', type=int, help='Height.')
 parser.add_argument('w', type=int, help='Width.')
+parser.add_argument('--reverse', type=bool, help='Reverse 0 and 1?')
+parser.add_argument('--output', type=str, help='Output file path.')
 args = parser.parse_args()
 
 # img process
@@ -42,61 +43,29 @@ print("False %d,True %d, Total %d.\n\n########" % (count_white,count_black,count
 
 x,y=[],[]
 # x stores x-coordinate, y for y-values
-
-array = array.tolist()
-for i in range(len(array)):
-	for j in range(len(array[i])):
-		array[i][j] = not array[i][j]
-array = np.array(array)
-# turn into list, take the not() value, then back to ndarray
+if args.reverse:
+	array = array.tolist()
+	for i in range(len(array)):
+		for j in range(len(array[i])):
+			array[i][j] = not array[i][j]
+	array = np.array(array)
+# if reverse required, turn into list, take the not() value, then back to ndarray
 
 y,x = np.nonzero(array)
 for i in range(len(y)):
 	y[i] = abs(args.w-y[i])
 # convert into conventional coordinate
+
 x=x.tolist()
 y=y.tolist()
 print('x = '+str(x))
 print('y = '+str(y)+'\n\n########')
 # output
 
-
 x.sort(reverse=True)
 y.sort(reverse=True)
+# sort to get minimum and maximum.
 
 print('Range X Min: %d,Max: %d' % (x[len(x)-1],x[0]))
 print('Range Y Min: %d,Max: %d' % (y[len(y)-1],y[0]))
-
-
-array = dg
-for i in range(len(array)):
-^Ifor j in range(len(array[i])):
-^I^Iarray[i][j] = not array[i][j]
-array = np.array(array)
-# turn into list, take the not() value, then back to ndarray
-
-y,x = np.nonzero(array)
-for i in range(len(y)):
-^Iy[i] = abs(40-y[i])
-# convert into conventional coordinate
-xa=x.tolist()
-ya=y.tolist()
-print('x = '+str(x))
-print('y = '+str(y)+'\n\n########')
-# output
-array = fw
-for i in range(len(array)):
-^Ifor j in range(len(array[i])):
-^I^Iarray[i][j] = not array[i][j]
-array = np.array(array)
-# turn into list, take the not() value, then back to ndarray
-
-y,x = np.nonzero(array)
-for i in range(len(y)):
-^Iy[i] = abs(40-y[i])
-# convert into conventional coordinate
-xb=x.tolist()
-yb=y.tolist()
-print('x = '+str(x))
-print('y = '+str(y)+'\n\n########')
 # output

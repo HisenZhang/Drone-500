@@ -22,16 +22,17 @@ This repository contains files for Drone 500 Project.
 ### resize
 
 ```
-usage: resize.py [-h] [--output OUTPUT] input h w
+usage: resize.py [-h] [--reverse REVERSE] [--output OUTPUT] input h w
 
 positional arguments:
-  input            Input file path.
-  h                Height.
-  w                Width.
+  input              Input file path.
+  h                  Height.
+  w                  Width.
 
 optional arguments:
-  -h, --help       show this help message and exit
-  --output OUTPUT  Output file path.
+  -h, --help         show this help message and exit
+  --reverse REVERSE  Reverse 0 and 1?
+  --output OUTPUT    Output file path.
 ```
 
 This program basically functions in following pattern:
@@ -43,7 +44,7 @@ This program basically functions in following pattern:
 
 For more information please view [documentation](./doc/workflow.md).
 
-#### Sample Output
+**Sample Output**
 
 ```
 False 6,True 7104, Total 7110.
@@ -57,6 +58,10 @@ Range X Min: 69,Max: 73
 Range Y Min: 53,Max: 55
 // Domain & Range
 ```
+
+### match
+
+This program process the complex transforming action. Transforming from figure A to B, the program find the best possible solution of matching, which makes the total distance moved short.
 
 ## Libraries
 
