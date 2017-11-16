@@ -1,1 +1,2 @@
-tools/match.pyc
+*.pyc
+*.bak

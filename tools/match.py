@@ -38,7 +38,7 @@ def all_match(M):
 		used[min_i] = True
 		MIN += min_val
 		mapping[Ai] = min_i
-	return mapping
+	return mapping,MIN
 
 def max_distance(pairs):
 	MAX=(0,)
@@ -58,8 +58,8 @@ def main(mat_A,mat_B):
 
 	M = [[((xb-xa)**2+(yb-ya)**2)**0.5 for xb, yb in B ] for xa, ya in A]
 	# Calcute distance matrix M. The result in available at doc/distance_matrix.txt
-
-	mapping = all_match(M)
+	# print(M)
+	mapping,MIN = all_match(M)
 	# get mapping table.
 	pairs=list(map(lambda t: (t[0], t[1].index(t[0])), [(min(row),row) for row in M ]))
 	# print tuples that contains minimum distance and index.
@@ -67,8 +67,9 @@ def main(mat_A,mat_B):
 	text_match(mapping)
 	# The result in available at doc/match_table.txt
 	print('Max (distance,point_in_B) to move:'+str(max_distance(pairs)))
-	
+	print('Total distance: '+str(MIN))
 
 if __name__ == '__main__':
 	main(fw,dg)
 	main(dg,bl)
+
