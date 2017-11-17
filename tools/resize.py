@@ -77,7 +77,6 @@ def main():
 		array = image_rev(array)
 
 	y,x = coordination_cvrt(args,array)
-
 	x,y = x.tolist(),y.tolist()
 
 	print('x = '+str(x)+'\ny = '+str(y)+'\n\n########')

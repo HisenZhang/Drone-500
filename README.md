@@ -2,12 +2,12 @@
 
 This repository contains files for Drone 500 Project.
 
-## Files
+## File
 
 
 ```
 .
-├── doc		// documentation
+├── doc		// documentation & text files
 ├── img		// images used
 │   ├── matrix	// processed images
 │   └── raw	// raw images
@@ -31,7 +31,7 @@ positional arguments:
 
 optional arguments:
   -h, --help         show this help message and exit
-  --reverse REVERSE  Reverse 0 and 1?
+  --reverse REVERSE  Reverse 0 and 1 switch
   --output OUTPUT    Output file path.
 ```
 
