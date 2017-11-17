@@ -1,5 +1,5 @@
 # doc/
-This folder holds several files that would be integrated into article. **Except source code.**
+This folder holds several files that would be integrated into article, or appendix. **Except  from source code.**
 ```
 .
 ├── curves.md	// Records for curves (with range) of dragon. 
@@ -11,3 +11,7 @@ This folder holds several files that would be integrated into article. **Except 
 
 0 directories, 6 files
 ```
+
+**NOTES**
+
+It is strongly recommended to load these files into a ramdisk. That helps you to improve the I/O performance when operating on distance matrices. **They are giant text files.**
