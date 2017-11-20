@@ -57,6 +57,8 @@ def main(mat_A,mat_B):
 	# zip x,y into (x,y) coordination pairs
 
 	M = [[((xb-xa)**2+(yb-ya)**2)**0.5 for xb, yb in B ] for xa, ya in A]
+	with open('M.txt','w') as fp:
+		fp.write(repr(M))
 	# Calcute distance matrix M. The result in available at doc/distance_matrix.txt
 	# print(M)
 	mapping,MIN = all_match(M)
