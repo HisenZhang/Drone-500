@@ -65,3 +65,36 @@ Just like the first tool in workflow `resize`, we developed this program to achi
 - the longest distance is minimized (it relates to worst time duration of moving);
 - every path is valid for only one drone.
 
+
+### km
+
+> This program is written with Python 2.7.  This is a free software; it is free for application, modification and distribution, but WITHOUT ANY WARRANTY and MERCHANTABILITY.
+
+The KM algorithm requires a lot of computation when the distance matrix is large. Since the limited time, we cannot get the exact answer to this problem. But to exam the correctness of our program, here we set up a test to see if it working expectedly.
+
+Suppose we have a 3 by 3 matrix containing distance information and now we want to workout the minimum overall distance. 
+$$
+\left[\begin{matrix}9 & 4 & 3\\2 & 5 & 6 \\7 & 1 & 8\end{matrix}\right]
+$$
+
+```bash
+$ echo [[9,4,3],[2,5,6],[7,1,8]] > tools/M.txt 
+```
+
+If we do it by hand, the '2' in first column seems to bring down the overall sum - thus we eliminate the second row. Then it is the third row, '1', and '3' in the first row. The expected answer is 6.
+
+So that we applied an algorithm, KM. The program reads in a distance matrix `M.txt` and gives its output.
+
+The output:
+
+```bash
+$ python tools/km.py 
+[1, 2, 0]
+6
+```
+
+The first line is a list, which indicate the index of selected element. In this case, '2', '1' and '3'. ( Remember the index of list starts with zero! ) The answer is just as what we have expected.
+
+The minimum sum is given in the second line. 6.
+
+Any other combination may lead to a sum which is equal or greater.

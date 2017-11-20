@@ -61,7 +61,36 @@ Range Y Min: 53,Max: 55
 
 ### match
 
-This program process the complex transforming action. Transforming from figure A to B, the program find the best possible solution of matching, which makes the total distance moved short.
+This program process the complex transforming action. Transforming from figure A to B, the program find the possible solution of matching, which makes the total distance moved short.
+
+Sample Output
+
+```
+Point A[1] goes to point B[12].
+Point A[6] goes to point B[19].
+...
+Point A[910] goes to point B[330].
+Max (distance,point_in_B) to move:(15.0, 825)
+Total distance: 10497.5672069
+```
+
+### km
+
+A improvement in algorithm is made here. However, the KM algorithm requires a lot of computation when the distance matrix is large. Since the limited time, we cannot get the exact answer to this problem. But to exam the correctness of our program, here we set up a test to see if it working expectedly. For more information please view the [documentation](doc/workflow.md).
+
+#### Sample Input
+
+```
+In text file M.txt:
+[[9,4,3],[2,5,6],[7,1,8]] 
+```
+
+#### Sample Output
+
+```
+[1, 2, 0]
+6
+```
 
 ## Libraries
 
