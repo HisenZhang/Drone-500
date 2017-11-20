@@ -63,7 +63,7 @@ Range Y Min: 53,Max: 55
 
 This program process the complex transforming action. Transforming from figure A to B, the program find the possible solution of matching, which makes the total distance moved short.
 
-Sample Output
+**Sample Output**
 
 ```
 Point A[1] goes to point B[12].
@@ -78,21 +78,21 @@ Total distance: 10497.5672069
 
 A improvement in algorithm is made here. However, the KM algorithm requires a lot of computation when the distance matrix is large. Since the limited time, we cannot get the exact answer to this problem. But to exam the correctness of our program, here we set up a test to see if it working expectedly. For more information please view the [documentation](doc/workflow.md).
 
-#### Sample Input
+**Sample Input**
 
 ```
 In text file M.txt:
 [[9,4,3],[2,5,6],[7,1,8]] 
 ```
 
-#### Sample Output
+**Sample Output**
 
 ```
 [1, 2, 0]
 6
 ```
 
-## Libraries
+## Library
 
 - numpy
 - argparse
